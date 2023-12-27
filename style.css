@@ -10,28 +10,40 @@
 
 html,
 body {
-  padding: 2px;
+  padding: 10px;
   padding-bottom: 300px;
   height: 100%
   background-color: var(--bg-color);
   color: black;
   font-family: Chicago;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 800px;
-  /* margin: auto; */
+  margin: auto;
+  cursor: url(/src/images/cursor.png), auto;
+}
+
+a {
+  cursor: url(/src/images/cursor.png), auto;
+  color: blue !important;
+}
+
+a:hover {
+  cursor: url(/src/images/cursorhover.png), auto;
+  color: blue !important;
 }
 
 .container {
   display: block;
-  width: 512px;
+  width: 800px;
   position: absolute;
   overflow: auto;
-  min-height: 586px;
+  min-height: 1200px;
   max-height: 1200px;
   border-radius: 5px;
   border-style: none;
   background-color: white;
   margin: auto;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.75);
   z-index: 2;
 }
 
@@ -49,5 +61,14 @@ body {
     top: 0%;
     left: 0%;
     z-index: 1;
+    animation: slide 2000s linear infinite;
 }
 
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-90%, 0, 0);
+    }
+}
