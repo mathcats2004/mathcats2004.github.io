@@ -60,7 +60,6 @@ a:hover {
   display: inline-flex;
 }
 
-<<<<<<< HEAD
 .wintitle {
   display: block;
   background-color: #a59f80;
@@ -91,11 +90,10 @@ a:hover {
   top: +2px;
   left: +2px;
   z-index: 5;
-=======
+}
+
 a:hover {
   filter:brightness(1.25);
-  
->>>>>>> 69da4f5 (reworked css and html, added pages for about and new index)
 }
 
 .container {
